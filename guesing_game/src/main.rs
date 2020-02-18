@@ -12,9 +12,15 @@ fn main() {
 
     let word = first_word(&mut s);
 
-    s.clear(); // error!
-
     println!("the first word is: {}", word);
+
+    s.clear(); // error!
+    
+    // println!("the first word is: {}", word); // Lỗi truy cập vùng nhớ đã clear
+
+    mutil_mutable();
+
+    no_dangle();
 }
 
 
@@ -48,4 +54,20 @@ fn first_word(s: &mut String) -> &str {
     }
 
     return &s[..]
+}
+
+fn mutil_mutable() {
+    let mut s = String::from("hello");
+
+    let r1 = &mut s; // no problem
+    //let r2 = &mut s; // no problem
+    println!("{}", r1);
+    let r3 = &mut s; // no problem;
+    println!("{}", r3);
+}
+
+fn no_dangle() -> String {
+    let s = String::from("hello");
+
+    s
 }
