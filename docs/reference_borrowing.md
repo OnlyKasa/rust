@@ -8,3 +8,10 @@
 ```
 
 # Mutable reference
+# Slice
+Khi sử dụng slice thì việc vay mượn kết thúc tức là giá trị biến ban đầu không còn tồn tại nữa.
+``` rust
+    let mut s = String::from("hello world");
+    let word = s[..2]; // slice func
+    s.clear(); // error!
+```

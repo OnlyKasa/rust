@@ -1,1 +1,1 @@
-# rust
+# Rust doc and example
