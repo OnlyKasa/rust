@@ -1,5 +1,5 @@
-
+mod service;
 fn main() {
     println!("Hello, world!");
-    lib::create_lib();
+    service::user_service::create();
 }
