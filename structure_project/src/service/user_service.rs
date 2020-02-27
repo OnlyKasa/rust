@@ -1,3 +1,4 @@
+use crate::service::clazz_service as clazz;
 
 pub fn create() {
 
@@ -5,6 +6,6 @@ pub fn create() {
     println!("{}", "Create user info ");
     // call clazz service for update clazz
     println!("{}", "start call clazz service");
-    
+    clazz::create();
     println!("{}", "end call clazz service");
 }
