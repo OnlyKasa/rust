@@ -16,8 +16,9 @@ fn main() {
 
     let first = &v[0];
 
-    // println!("first {:?}", first);
-
-    v.push("3"); // error when update vector when holding a reference to an item
     println!("first {:?}", first);
+
+    // v.push("3"); // error when update vector when holding a reference to an item
+    println!("first {:?}", first);
+     
 }
