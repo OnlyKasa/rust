@@ -20,5 +20,5 @@ fn main() {
 
     // v.push("3"); // error when update vector when holding a reference to an item
     println!("first {:?}", first);
-     
+
 }
