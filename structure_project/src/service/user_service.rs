@@ -1,3 +1,4 @@
+#![allow(dead_code)]
 use crate::service::clazz_service as clazz;
 
 pub fn create() {

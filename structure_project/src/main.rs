@@ -23,6 +23,9 @@ fn main() {
 
     let (a, b, c, d) = tuple;
     println!("{}, {}, {}, {}", a, b, c, d);
+
+    let ys: [i32; 500] = [0; 500];
+    println!("{}", ys[100])
 }
 
 
